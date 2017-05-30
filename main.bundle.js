@@ -968,7 +968,7 @@ var getWorstChar = function (state) { return state.worstChar; };
 /* unused harmony export GET_PLANET_URL */
 /* unused harmony export VEHICLES_URL */
 /* unused harmony export GET_VEHICLE_URL */
-var SWAPI_URL = 'http://swapi.co/api';
+var SWAPI_URL = 'https://swapi.co/api';
 /**
  * Generate all the urls for the star wars api
  */
