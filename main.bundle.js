@@ -1817,7 +1817,10 @@ var SwapiService = (function () {
         return this.http.get(__WEBPACK_IMPORTED_MODULE_3__config_swapi_variables__["b" /* PEOPLE_URL */]).map(function (res) { return res.json(); });
     };
     SwapiService.prototype.getResourceByURL = function (url) {
-        return this.http.get(url).map(function (res) { return res.json(); });
+        return this.http.get(this.convertUrlToHttps(url)).map(function (res) { return res.json(); });
+    };
+    SwapiService.prototype.convertUrlToHttps = function (url) {
+        return url.replace(/http(?!s)/, 'https');
     };
     return SwapiService;
 }());
